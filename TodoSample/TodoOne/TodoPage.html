@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Todo Sample</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link type="text/css" href="site.css" rel="stylesheet" />
+    <script type="text/javascript" src="site.js"></script>
+</head>
+<body>
+    <header class="back-color">
+        <h1>
+            <i class="fa-solid fa-clipboard-check"></i>
+            TODO Sample
+        </h1>
+    </header>
+
+    <aside class="todo-input-aside back-color">
+        <label for="txtTodo">Todo</label>
+        <input type="text" name="txtTodo" id="txtTodo" value="" />
+        <button class="btn" id="btnAdd">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </aside>
+
+    <aside class="todo-content">
+        <div class="todo-area">
+            <div class="todo-header todo-content-back-color">
+                <span>TODO</span>
+            </div>
+
+            <div class="todo-article">
+                <ul id="todoUL">
+                    <!--<li class="todo-complete">
+                    <input type="checkbox" name="name" value=""/>
+                    Deneme</li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="todo-area">
+            <div class="todo-header todo-content-back-color">
+                <span>Complate</span>
+            </div>
+
+            <div class="todo-article">
+                <ul id="complateUL">
+                    <!--<li class="todo-complete">
+                        <input type="checkbox" name="name" value="" />
+                        Deneme
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="todo-input-aside back-color">
+        <button id="btnDelete">Sil</button>
+    </aside>
+</body>
+</html>
